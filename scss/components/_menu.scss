@@ -1,0 +1,44 @@
+.nav {
+    margin: 1rem;
+    display: inline-block !important;
+    width: 100%;
+
+    &__logo {
+        float: left !important;
+        height: 35px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__buttons {
+        float: right !important;
+        right: 0;
+
+        .message:hover {
+            font-weight: 800;
+            cursor: pointer;
+        }
+    }
+
+    &__languages {
+        display: inline;
+        padding-left: 2rem;
+
+        .english:hover {
+            font-weight: 800;
+            cursor: pointer;
+        }
+
+        .norwegian:hover {
+            font-weight: 800;
+            cursor: pointer;
+        }
+    }
+
+    // .language { 
+    //     float: right;
+    //     right: 0;
+    // }
+}

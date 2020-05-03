@@ -1,0 +1,25 @@
+footer {
+    text-align: center;
+
+    .links {
+        list-style-type: none;
+        margin-bottom: 2rem;
+        color: $color-primary;
+    
+        li {
+            font-size: 1.2rem;
+            display: inline;
+            margin-left: 1rem;
+            color: $dark-grey;
+
+            &:hover {
+                color: $light-grey;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .copy {
+        margin-bottom: 2rem;
+    }
+}

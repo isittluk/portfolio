@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=DM+Sans|DM+Serif+Display&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/2b53ec7f2c.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <script id="expressions-template" type="text/x-handlebars-template">
+            <h2>{{project.name}}</h2>
+            <div class="container-overview">
+                <div class="row">
+                    <h5>Overview</h5>
+                    {{project.overview}}
+                </div>
+                <div class="row">
+                    <h5>Role</h5>
+                    {{project.role}} <br>
+                    {{project.keywords}} 
+                    <br><br>
+                    {{project.date}}
+                </div>
+            </div>
+            <div class="container-background">
+                <h4>Background</h4>
+                {{background.pOne}} <br><br>
+                {{background.pTwo}} <br><br>
+                {{background.pThree}} <br><br>
+                <ul>
+                    <li><b>{{background.liOneBold}}</b> {{background.liOneDesc}}</li>
+                    <li><b>{{background.liTwoBold}}</b> {{background.liTwoDesc}}</li>
+                    <li><b>{{background.liThreeBold}}</b> {{background.liThreeDesc}}</li>
+                    <li><b>{{background.liFourBold}}</b> {{background.liFourDesc}}</li>
+                </ul>
+            </div>
+
+        </script>
+
+        <div class="content-placeholder"></div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+        <script src="/js/portfolio_template.js"></script>
+    </body>
+</html>

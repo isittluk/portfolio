@@ -1,0 +1,68 @@
+.work {
+    margin-top: 15rem;
+    height: 85vh;
+    position: relative;
+    display: block;
+
+    @include responsive(laptop) {
+        margin-top: 0;
+        height: 80vh;
+    }
+
+    .container-nav {
+        .toggle {
+            list-style: none;
+            display: flex;
+            position: relative;
+            float: right;
+
+            li {
+                padding-left: 5px;
+            }
+
+            .ui {
+                color: $light-grey;
+                font-size: .8rem;
+            }
+
+            .dev {
+                color: $light-grey;
+                font-size: .8rem;
+            }
+        }
+    }
+
+    .container {
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        margin: 0 5rem;
+
+    }
+    .ui:hover {
+        cursor: pointer;
+    }
+
+    .dev:hover {
+        cursor: pointer;
+    }
+
+    .worklist {
+        list-style-type: none;
+        display: inline-flex;
+        flex-direction: column;
+
+        .portfolio {
+            width: 100%;
+        }
+
+        li {
+            margin-bottom: 1rem;
+        
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+    }
+}

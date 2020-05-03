@@ -1,0 +1,57 @@
+.call-to-action {
+    font-family: $font-secondary;
+    border-color: $color-primary;
+    background-color: $color-secondary;
+    color: $color-primary;
+    padding: 10px 20px;
+}
+
+.slide-right-hover {
+    background-image: -webkit-linear-gradient(45deg, $color-primary 50%, transparent 50%);
+    background-image: linear-gradient(45deg, $color-primary 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 400ms ease-in-out;
+
+    &:hover {
+        background-position: 0;
+        color: $color-secondary;
+        cursor: pointer;
+    }
+}
+
+.onoffswitch {
+    position: relative; width: 2.5rem;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    height: 12px; padding: 0; line-height: 12px;
+    border: 2px solid #E3E3E3; border-radius: 12px;
+    background-color: #FFFFFF;
+    transition: background-color 0.3s ease-in;
+
+    &:before {
+        content: "";
+        display: block; width: 12px; margin: 0px;
+        background: #FFFFFF;
+        position: absolute; top: 0; bottom: 0;
+        right: 1.5rem;
+        border: 2px solid #E3E3E3; border-radius: 12px;
+        transition: all 0.3s ease-in 0s; 
+    }
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+    background-color: $color-primary;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+    border-color: $color-primary;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+    right: 0px; 
+}

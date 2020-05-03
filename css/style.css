@@ -1,0 +1,207 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  padding: 0 5rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  transition: all 0.5s; }
+
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 5rem;
+  line-height: 5rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  letter-spacing: 3px; }
+  @media only screen and (max-width: 90em) {
+    h1 {
+      font-size: 3.5rem;
+      line-height: 3.5rem; } }
+
+h4 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 2rem; }
+
+p {
+  font-family: "DM Sans", sans-serif;
+  margin-bottom: 2rem; }
+  @media only screen and (max-width: 90em) {
+    p {
+      font-size: 0.9rem; } }
+
+.call-to-action {
+  font-family: "DM Sans", sans-serif;
+  border-color: black;
+  background-color: white;
+  color: black;
+  padding: 10px 20px; }
+
+.slide-right-hover {
+  background-image: -webkit-linear-gradient(45deg, black 50%, transparent 50%);
+  background-image: linear-gradient(45deg, black 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 400ms ease-in-out; }
+  .slide-right-hover:hover {
+    background-position: 0;
+    color: white;
+    cursor: pointer; }
+
+.onoffswitch {
+  position: relative;
+  width: 2.5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+
+.onoffswitch-checkbox {
+  display: none; }
+
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  height: 12px;
+  padding: 0;
+  line-height: 12px;
+  border: 2px solid #E3E3E3;
+  border-radius: 12px;
+  background-color: #FFFFFF;
+  transition: background-color 0.3s ease-in; }
+  .onoffswitch-label:before {
+    content: "";
+    display: block;
+    width: 12px;
+    margin: 0px;
+    background: #FFFFFF;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 1.5rem;
+    border: 2px solid #E3E3E3;
+    border-radius: 12px;
+    transition: all 0.3s ease-in 0s; }
+
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+  background-color: black; }
+
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+  border-color: black; }
+
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+  right: 0px; }
+
+.nav {
+  margin: 1rem;
+  display: inline-block !important;
+  width: 100%; }
+  .nav__logo {
+    float: left !important;
+    height: 35px; }
+    .nav__logo:hover {
+      cursor: pointer; }
+  .nav__buttons {
+    float: right !important;
+    right: 0; }
+    .nav__buttons .message:hover {
+      font-weight: 800;
+      cursor: pointer; }
+  .nav__languages {
+    display: inline;
+    padding-left: 2rem; }
+    .nav__languages .english:hover {
+      font-weight: 800;
+      cursor: pointer; }
+    .nav__languages .norwegian:hover {
+      font-weight: 800;
+      cursor: pointer; }
+
+footer {
+  text-align: center; }
+  footer .links {
+    list-style-type: none;
+    margin-bottom: 2rem;
+    color: black; }
+    footer .links li {
+      font-size: 1.2rem;
+      display: inline;
+      margin-left: 1rem;
+      color: #2b2b2b; }
+      footer .links li:hover {
+        color: #9f9f9f;
+        cursor: pointer; }
+  footer .copy {
+    margin-bottom: 2rem; }
+
+.header {
+  height: 100vh;
+  position: relative; }
+  .header__container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 5rem; }
+    .header__container .subtitle {
+      width: 50%;
+      line-height: 1.5rem;
+      letter-spacing: 1px; }
+      @media only screen and (max-width: 90em) {
+        .header__container .subtitle {
+          width: 78%; } }
+
+.work {
+  margin-top: 15rem;
+  height: 85vh;
+  position: relative;
+  display: block; }
+  @media only screen and (max-width: 90em) {
+    .work {
+      margin-top: 0;
+      height: 80vh; } }
+  .work .container-nav .toggle {
+    list-style: none;
+    display: flex;
+    position: relative;
+    float: right; }
+    .work .container-nav .toggle li {
+      padding-left: 5px; }
+    .work .container-nav .toggle .ui {
+      color: #9f9f9f;
+      font-size: .8rem; }
+    .work .container-nav .toggle .dev {
+      color: #9f9f9f;
+      font-size: .8rem; }
+  .work .container {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    margin: 0 5rem; }
+  .work .ui:hover {
+    cursor: pointer; }
+  .work .dev:hover {
+    cursor: pointer; }
+  .work .worklist {
+    list-style-type: none;
+    display: inline-flex;
+    flex-direction: column; }
+    .work .worklist .portfolio {
+      width: 100%; }
+    .work .worklist li {
+      margin-bottom: 1rem; }
+      .work .worklist li:hover {
+        cursor: pointer; }
+
+.dark {
+  background-color: black;
+  color: white;
+  transition: all 0.5s; }

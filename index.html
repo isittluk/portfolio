@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>UX Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=DM+Sans|DM+Serif+Display&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/2b53ec7f2c.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+    </head>
+    <body>
+        <header class="header">
+            <div class="nav">
+                <img src="/img/logo_1.png" alt="logo" class="nav__logo">
+                <ul class="nav__buttons">
+                    <i class= "message far fa-envelope"></i>
+                    <p class="nav__languages">
+                        <span class="english">EN</span>
+                        <span class="div"> / </span>
+                        <span class="norwegian">NO</span>
+                    </p>
+                </ul>
+            </div>
+
+            <div class="header__container">
+                <h1>
+                    <span class="color--1">Hi! </span>
+                    <span class="color--2">I'm <br></span>
+                    <span class="color--3">Luke </span>
+                    <span class="color--4">Isitt</span>
+                </h1>
+                <p class="subtitle">UI/UX designer with 5 years of experience in design and development, passionate about designing digital experiences that leave a positive impact on people, for the people. Currently located in Washington, United States.</p>
+                <button class="call-to-action slide-right-hover">See My Work</button>
+            </div>
+        </header>
+
+        <section class="work" id="section_work">
+            <div class="container-nav">
+                <ul class="toggle">
+                    <li class="ui">dev</li>
+                    <li class="toggle-btn">
+                        <div class="work-toggle onoffswitch">
+                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="darkToggle" checked>
+                            <label class="onoffswitch-label" for="darkToggle"></label>
+                        </div>
+                    </li>
+                    <li class="dev">UI/UX</li>
+                </ul>
+            </div>
+            <div class="container">
+                <h4>My <span id="portfolioType">Design</span> Portfolio:</h4>
+                <ul class="worklist">
+                    <li class="portfolio firstLink">
+                        <a href="/display.html?content=first">Promote Creatively</a>
+                    </li>
+                    
+                    <li class="portfolio">
+                        <a href="/display.html?content=second">Etsi Bravo</a>
+                    </li>
+                    <li class="portfolio">Nursing CE</li>
+                    <li class="portfolio">Zoe Coffeehouse</li>
+                    <li class="portfolio">IVXXLUXE</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <ul class="links">
+                <li><i class="fab fa-linkedin-in"></i></li>
+                <li><i class="fab fa-dribbble"></i></li>
+                <li><i class="fab fa-github"></i></li>
+                <li><i class= "message far fa-envelope"></i></li>
+            </ul>
+            <p class="copy">&copy; 2020 Luke Isitt. All rights reserved.</p>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script src="/js/animate.js"></script>
+        <script src="/js/lightDarkToggle.js"></script>
+        <script src="/js/languageToggle.js"></script>
+    </body>
+</html>
