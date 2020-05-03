@@ -1,6 +1,8 @@
 # Portfolio
 This is the source code for my UI/UX and front-end development portfolio. This portfolio utilizes [SCSS](https://github.com/sass/sass) and [Handlebars.js](https://handlebarsjs.com/) for increased efficiency for development and release phases.
 
+![Landing Page](img/portfolio.JPG)
+
 ## Purpose
 This directory displays all of the code used for unique assets. Because of the simplicity of this project, there is a lot of room for visual design, where I will be using JavaScript to create complex motion graphics for specific elements. 
 
