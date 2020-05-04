@@ -48,9 +48,9 @@ $(function() {
             "stylistsDesc": "Referencing a deeper explanation of packages, services, and history. Allowed the user to better get to know the brand and company.",
             "bookDesc": "Book a 1-on-1 appointment with a Cabi Stylists beauty brand specialist. "
         },
-        "Learnings": {
+        "learnings": {
             "p1Title": "Our Target Audience",
-            "p1Desc":  ""
+            "p1Desc":  "When you're communicating your process and solutions to a client who isn't always the key decision maker, it's important to keep your points clear and concise enough for easy re-communication. Even though the client may appreciate the extra displayed effort, it can muddy the waters when feedback comes back out."
         }
     };
 

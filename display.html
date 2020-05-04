@@ -13,25 +13,38 @@
     </head>
     <body>
         <script id="expressions-template" type="text/x-handlebars-template">
-            <h2>{{project.name}}</h2>
+            <div class="nav">
+                <img src="/img/logo_1.png" alt="logo" class="nav__logo">
+                <ul class="nav__buttons">
+                    <i class= "message far fa-envelope"></i>
+                    <p class="nav__languages">
+                        <span class="english">EN</span>
+                        <span class="div"> / </span>
+                        <span class="norwegian">NO</span>
+                    </p>
+                </ul>
+            </div>
+            <div class="pageNav">Home > {{project.name}}</div>
+
             <div class="container-overview">
                 <div class="row">
-                    <h5>Overview</h5>
-                    {{project.overview}}
-                </div>
-                <div class="row">
-                    <h5>Role</h5>
-                    {{project.role}} <br>
-                    {{project.keywords}} 
-                    <br><br>
-                    {{project.date}}
+                    <div class="col-1-of-2">
+                        <h5 class="role__title">Role</h5>
+                        <p class="role__role">{{project.role}}</p>
+                        <p class="role__keywords">{{project.keywords}} </p>
+                        <p class="role__date">{{project.date}}</p>
+                    </div>
+                    <div class="col-1-of-2">
+                        <h5 class="overview__title">Overview</h5>
+                        <p class="overview__overview">{{project.overview}}</p>
+                    </div>
                 </div>
             </div>
             <div class="container-background">
-                <h4>Background</h4>
-                {{background.pOne}} <br><br>
-                {{background.pTwo}} <br><br>
-                {{background.pThree}} <br><br>
+                <h5>Background</h5>
+                <p>{{background.pOne}} <br><br></p>
+                <p>{{background.pTwo}} <br><br></p>
+                <p>{{background.pThree}} <br><br></p>
                 <ul>
                     <li><b>{{background.liOneBold}}</b> {{background.liOneDesc}}</li>
                     <li><b>{{background.liTwoBold}}</b> {{background.liTwoDesc}}</li>
@@ -39,7 +52,36 @@
                     <li><b>{{background.liFourBold}}</b> {{background.liFourDesc}}</li>
                 </ul>
             </div>
+            <div class="container-goals">
+                <h4>Goals</h4>
+                <li>{{goals.goal1}}</li>
+                <li>{{goals.goal2}}</li>
+                <li>{{goals.goal3}}</li>
+                <li>{{goals.goal4}}</li>
+            </div>
+            <div class="container-research">
+                <h4>Research Methods</h4>
+                <li>{{researchMethods.method1}}</li>
+                <li>{{researchMethods.method2}}</li>
+                <li>{{researchMethods.method3}}</li>
+                <li>{{researchMethods.method4}}</li>
+                <li>{{researchMethods.method5}}</li>
+            </div>
+            <div class="container-pages">
+                <p>Page Description</p>
+                <p>{{pageDesc.homeDesc}}</p>
 
+                <p>Page Description</p>
+                <p>{{pageDesc.stylistsDesc}}</p>
+
+                <p>Page Description</p>
+                <p>{{pageDesc.bookDesc}}</p>
+            </div>
+            <div class="container-learnings">
+                <h4>Learnings</h4>
+                <p>{{learnings.p1Title}}</p>
+                <p>{{learnings.p1Desc}}</p>
+            </div>
         </script>
 
         <div class="content-placeholder"></div>

@@ -1,0 +1,26 @@
+.pageNav {
+    margin: 10rem 0 4rem 0 !important;
+}
+
+.container-overview {
+    margin-bottom: 4rem;
+    .role {
+        &__title {
+            margin-bottom: 1rem;
+        }
+        &__role {
+            margin-bottom: 1rem;
+        }
+        &__keywords {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .overview {
+        &__title {
+            margin-bottom: 1rem;
+        }
+        &__overview {
+        }
+    }
+}

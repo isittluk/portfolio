@@ -25,11 +25,23 @@ h1 {
       font-size: 3.5rem;
       line-height: 3.5rem; } }
 
+h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 400; }
+
 h4 {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   font-size: 1.5rem;
   margin-bottom: 2rem; }
+
+h5 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1rem; }
 
 p {
   font-family: "DM Sans", sans-serif;
@@ -143,6 +155,46 @@ footer {
   footer .copy {
     margin-bottom: 2rem; }
 
+.row {
+  max-width: 144rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      max-width: 60rem;
+      padding: 0 8rem; } }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
 .header {
   height: 100vh;
   position: relative; }
@@ -158,6 +210,20 @@ footer {
       @media only screen and (max-width: 90em) {
         .header__container .subtitle {
           width: 78%; } }
+
+.pageNav {
+  margin: 10rem 0 4rem 0 !important; }
+
+.container-overview {
+  margin-bottom: 4rem; }
+  .container-overview .role__title {
+    margin-bottom: 1rem; }
+  .container-overview .role__role {
+    margin-bottom: 1rem; }
+  .container-overview .role__keywords {
+    margin-bottom: 1rem; }
+  .container-overview .overview__title {
+    margin-bottom: 1rem; }
 
 .work {
   margin-top: 15rem;
