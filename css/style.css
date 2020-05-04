@@ -40,7 +40,7 @@ h4 {
 
 h5 {
   font-family: "DM Sans", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1rem; }
 
 p {
@@ -112,6 +112,12 @@ p {
 
 .onoffswitch-checkbox:checked + .onoffswitch-label:before {
   right: 0px; }
+
+.underline {
+  background-color: black;
+  height: 2px;
+  width: 25px;
+  margin-bottom: 1rem; }
 
 .nav {
   margin: 1rem;
@@ -217,13 +223,16 @@ footer {
 .container-overview {
   margin-bottom: 4rem; }
   .container-overview .role__title {
-    margin-bottom: 1rem; }
+    margin-bottom: .4rem; }
   .container-overview .role__role {
     margin-bottom: 1rem; }
   .container-overview .role__keywords {
     margin-bottom: 1rem; }
   .container-overview .overview__title {
-    margin-bottom: 1rem; }
+    margin-bottom: .4rem; }
+
+.container-background .background__title {
+  margin-bottom: .4rem; }
 
 .work {
   margin-top: 15rem;

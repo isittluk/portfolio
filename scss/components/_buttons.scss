@@ -55,3 +55,10 @@
 .onoffswitch-checkbox:checked + .onoffswitch-label:before {
     right: 0px; 
 }
+
+.underline {
+    background-color: $color-primary;
+    height: 2px;
+    width: 25px;
+    margin-bottom: 1rem;
+}
