@@ -39,6 +39,18 @@ $(function() {
             "method3": "Customer journey",
             "method4": "Persona",
             "method5": "Information architecture"
+        },
+        "focusAreas": {
+            "questions": "What are the challenges or barriers with site use and adoption? What's important for a great user experience? What are the clients' needs and unmet needs, both online and offline? High-fideliity prototype feedback."
+        },
+        "pageDesc": {
+            "homeDesc": "Designing a content-rich landing page that can capture the amount of information the user feels necessary to know -- prioritizing SEO to make it simply known that Promote Creatively is a Social Media Management site and available for bookings.",
+            "stylistsDesc": "Referencing a deeper explanation of packages, services, and history. Allowed the user to better get to know the brand and company.",
+            "bookDesc": "Book a 1-on-1 appointment with a Cabi Stylists beauty brand specialist. "
+        },
+        "Learnings": {
+            "p1Title": "Our Target Audience",
+            "p1Desc":  ""
         }
     };
 
