@@ -231,8 +231,17 @@ footer {
   .container-overview .overview__title {
     margin-bottom: .4rem; }
 
-.container-background .background__title {
-  margin-bottom: .4rem; }
+.container-background {
+  margin-bottom: 4rem; }
+  .container-background .background__title {
+    margin-bottom: .4rem; }
+  .container-background .background__text {
+    margin-bottom: 0; }
+  .container-background li {
+    margin-bottom: .5rem;
+    margin-left: 2rem; }
+    .container-background li .bold {
+      font-weight: 600; }
 
 .work {
   margin-top: 15rem;

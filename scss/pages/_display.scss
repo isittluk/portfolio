@@ -26,9 +26,24 @@
 }
 
 .container-background {
+    margin-bottom: 4rem;
     .background {
         &__title {
             margin-bottom: .4rem;
         }
+        &__text {
+            margin-bottom: 0;
+        }
     }
+    li {
+        margin-bottom: .5rem;
+        margin-left: 2rem;
+
+        .bold {
+            font-weight: 600;
+        }
+    }
+}
+
+.container-goals {
 }

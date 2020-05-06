@@ -45,25 +45,46 @@
             <div class="container-background">
                 <h5 class="background__title">Background</h5>
                 <div class="underline"></div>
-                <p>{{background.pOne}} <br><br></p>
-                <p>{{background.pTwo}} <br><br></p>
-                <p>{{background.pThree}} <br><br></p>
+                <p class="background__text">{{background.pOne}} <br><br></p>
+                <p class="background__text">{{background.pTwo}} <br><br></p>
+                <p class="background__text">{{background.pThree}} <br><br></p>
                 <ul>
-                    <li><b>{{background.liOneBold}}</b> {{background.liOneDesc}}</li>
-                    <li><b>{{background.liTwoBold}}</b> {{background.liTwoDesc}}</li>
-                    <li><b>{{background.liThreeBold}}</b> {{background.liThreeDesc}}</li>
-                    <li><b>{{background.liFourBold}}</b> {{background.liFourDesc}}</li>
+                    <li>
+                        <span class="bold">
+                            {{background.liOneBold}}
+
+                        </span> 
+                        {{background.liOneDesc}}
+                    </li>
+                    <li><span class="bold">
+                        {{background.liTwoBold}} 
+                        </span>
+                        {{background.liTwoDesc}}
+                </li>
+                    <li>
+                        <span class="bold">
+                            {{background.liThreeBold}}
+                        </span>
+                        {{background.liThreeDesc}}</li>
+                    <li>
+                        <span class="bold">
+                            {{background.liFourBold}}
+                        </span>
+                        {{background.liFourDesc}}
+                </li>
                 </ul>
             </div>
             <div class="container-goals">
-                <h4>Goals</h4>
+                <h5>Goals</h5>
+                <div class="underline"></div>
                 <li>{{goals.goal1}}</li>
                 <li>{{goals.goal2}}</li>
                 <li>{{goals.goal3}}</li>
                 <li>{{goals.goal4}}</li>
             </div>
             <div class="container-research">
-                <h4>Research Methods</h4>
+                <h5>Research Methods</h5>
+                <div class="underline"></div>
                 <li>{{researchMethods.method1}}</li>
                 <li>{{researchMethods.method2}}</li>
                 <li>{{researchMethods.method3}}</li>
