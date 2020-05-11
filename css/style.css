@@ -280,6 +280,12 @@ footer {
     flex-direction: column; }
     .work .worklist .portfolio {
       width: 100%; }
+      .work .worklist .portfolio .a,
+      .work .worklist .portfolio a:visited,
+      .work .worklist .portfolio a:link {
+        text-decoration: none;
+        text-decoration-color: none;
+        color: black; }
     .work .worklist li {
       margin-bottom: 1rem; }
       .work .worklist li:hover {
