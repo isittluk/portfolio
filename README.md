@@ -23,5 +23,5 @@ You may want to customize or use the project as a template. Here is an overview 
 - `display.html` uses handlebars.js to create a template for all written content for each portfolio page. The text can be edited in `portfolio_template.js`.
 - `portfolio_template.js` contains all the written content that is referenced in `display.html`. To keep the template as it is, only edit the text content in this file.
 
-## Design System
+## Design System (alpha)
 A design system is in the process of being created for the minimalist theme. The design system can be viewed [here](https://www.figma.com/file/ZpCuJVjthaKOmn9N6qPdHN/Portfolio?node-id=0%3A1)
