@@ -1,3 +1,15 @@
+.worklist .portfolio {
+  transition: .2s all; }
+
+.worklist:hover .portfolio {
+  filter: blur(3px);
+  opacity: .5; }
+
+.worklist:hover .portfolio:hover {
+  transform: scale(1);
+  filter: blur(0px);
+  opacity: 1; }
+
 *,
 *::after,
 *::before {
@@ -279,13 +291,14 @@ footer {
     display: inline-flex;
     flex-direction: column; }
     .work .worklist .portfolio {
-      width: 100%; }
+      width: 100%;
+      transition: .2s all; }
       .work .worklist .portfolio .a,
       .work .worklist .portfolio a:visited,
       .work .worklist .portfolio a:link {
         text-decoration: none;
         text-decoration-color: none;
-        color: black; }
+        color: inherit; }
     .work .worklist li {
       margin-bottom: 1rem; }
       .work .worklist li:hover {

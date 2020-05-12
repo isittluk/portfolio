@@ -54,17 +54,14 @@
 
         .portfolio {
             width: 100%;
+            transition:.2s all; 
 
             .a, 
             a:visited, 
             a:link {
                 text-decoration: none;
                 text-decoration-color: none;
-                color: $color-primary;
-            }
-
-            .a:hover {
-                
+                color: inherit;
             }
         }
 

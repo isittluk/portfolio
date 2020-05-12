@@ -1,0 +1,16 @@
+.worklist {
+    .portfolio {
+        transition:.2s all; 
+    }
+
+    &:hover .portfolio {
+        filter:blur(3px);
+        opacity:.5;
+    }
+
+    &:hover .portfolio:hover {
+        transform:scale(1);
+        filter:blur(0px);
+        opacity:1;
+    }
+}
