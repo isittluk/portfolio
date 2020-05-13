@@ -4,11 +4,8 @@ $(".call-to-action").click(function() {
     }, 1200);
 });
 
-ScrollReveal().reveal('.work', {
-    reset: true,
-    delay: 500
-});
+ScrollReveal().reveal('.work', { reset: true, delay: 500 });
 
-$(window).on('beforeunload', function() {
-    $(window).scrollTop(0);
-});
+// $(window).on('beforeunload', function() {
+//     $(window).scrollTop(0);
+// });

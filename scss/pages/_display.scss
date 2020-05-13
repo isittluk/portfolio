@@ -1,26 +1,44 @@
-.pageNav {
-    margin: 10rem 0 4rem 0 !important;
+.image_container {
+    display: block;
+    text-align: center;
+    .image_present {
+        width: 75%;
+        margin-bottom: 1rem;
+
+        animation: fadeInUp;
+        animation-duration: 1s;
+    }
 }
 
 .container-overview {
     margin-bottom: 4rem;
-    .role {
-        &__title {
-            margin-bottom: .4rem;
-        }
-        &__role {
-            margin-bottom: 1rem;
-        }
-        &__keywords {
-            margin-bottom: 1rem;
-        }
-    }
 
-    .overview {
-        &__title {
-            margin-bottom: .4rem;
+    .container__text {
+        width: 50%;
+        margin: 0 auto;
+        .project {
+
+            &__title {
+                margin-bottom: 0;
+                color: $light-grey;
+            }
+            &__statement {
+                margin-bottom: 1rem;
+            }
+            &__overview {
+                
+            }
         }
-        &__overview {
+        ul {
+            margin-bottom: 10rem;
+            li {
+                margin-bottom: .5rem;
+                margin-left: 2rem;
+        
+                .bold {
+                    font-weight: 600;
+                }
+            }
         }
     }
 }

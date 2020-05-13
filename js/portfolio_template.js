@@ -7,14 +7,26 @@ $(function() {
     let theCompiledHtml = null;
     let first = {
         "project": {
-            "name": "Promote Creatively",
-            "type": "Website Redesign",
-            "role": "Website Designer",
-            "keywords": "User Research, Interaction, Visual design, prototyping",
+            "image": {
+                "src": "/img/promote-creatively-min.png",
+                "alt": "image preview of promote creatively project"
+            },
+
+            "title": "Promote Creatively",
+            "statement": "Bringing Business to Fashion.",
             "date": "April 2020 - April 2020",
-            "overview": "Promote Creatively began as a simple project, aiming to implement basic edits to refine the current brand. <br><br> The goal of this project adapted quickly, becoming a complete website redesign. The new design should become more user-friendly, and better evoke the client's niche and skills.",
+            "overview": {
+                "pOne": "Promote Creatively began as a simple project, aiming to implement basic edits to refine the current brand. The goal of this project adapted quickly, becoming a complete website redesign. The new design should become more user-friendly, and better evoke the client's niche and skills.",
+                "pTwo": "Promote Creatively is a social media management service that connects small business owners with their target audience through customer user experience. I was hired as the sole UI/UX designer in April, working directly with the small business owner. I was to design the Home, Stylists, and Blog page and was responsible for leading the User Experience and User Interface side of the platform.",
+                "pThree": "Some key achievements of this project are listed as follows:"
+            }
         },
-        "background": {
+        "pageOne": {
+            "image": {
+                "src": "/img/promote-creatively-2-min.png",
+                "alt": "image preview of promote creatively home page"
+            },
+
             "pOne": "Promote Creatively is a social media management service that connects small business owners with their target audience through customer user experience.",
             "pTwo": "I was hired as the sole UI/UX designer in April, working directly with the small business owner. I was to design the Home, Stylists, and Blog page and was responsible for leading the User Experience and User Interface side of the platform.",
             "pThree": "Some key achievements of this project are listed as follows",
@@ -68,6 +80,6 @@ $(function() {
         console.log("test2");
         theCompiledHtml = theTemplate(second);
     } else console.log("uh oh");
-
+    $('.image_present').attr("src", "/img/logo_1.png");
     $('.content-placeholder').html(theCompiledHtml);
 });

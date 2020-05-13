@@ -11,8 +11,7 @@ body {
   font-size: 1rem;
   background-color: white;
   color: black;
-  transition: all 0.5s;
-  overflow: hidden; }
+  transition: all 0.5s; }
 
 h1 {
   font-family: "DM Serif Display", serif;
@@ -31,6 +30,10 @@ h2 {
   font-size: 3rem;
   line-height: 3rem;
   margin-bottom: 2rem;
+  font-weight: 400; }
+
+h3 {
+  font-size: 1.75rem;
   font-weight: 400; }
 
 h4 {
@@ -157,7 +160,7 @@ footer {
       margin-left: 1rem;
       color: #2b2b2b; }
       footer .links li:hover {
-        color: #9f9f9f;
+        color: #9E9E9E;
         cursor: pointer; }
   footer .copy {
     margin-bottom: 2rem; }
@@ -218,19 +221,32 @@ footer {
         .header__container .subtitle {
           width: 78%; } }
 
-.pageNav {
-  margin: 10rem 0 4rem 0 !important; }
+.image_container {
+  display: block;
+  text-align: center; }
+  .image_container .image_present {
+    width: 75%;
+    margin-bottom: 1rem;
+    animation: fadeInUp;
+    animation-duration: 1s; }
 
 .container-overview {
   margin-bottom: 4rem; }
-  .container-overview .role__title {
-    margin-bottom: .4rem; }
-  .container-overview .role__role {
-    margin-bottom: 1rem; }
-  .container-overview .role__keywords {
-    margin-bottom: 1rem; }
-  .container-overview .overview__title {
-    margin-bottom: .4rem; }
+  .container-overview .container__text {
+    width: 50%;
+    margin: 0 auto; }
+    .container-overview .container__text .project__title {
+      margin-bottom: 0;
+      color: #9E9E9E; }
+    .container-overview .container__text .project__statement {
+      margin-bottom: 1rem; }
+    .container-overview .container__text ul {
+      margin-bottom: 10rem; }
+      .container-overview .container__text ul li {
+        margin-bottom: .5rem;
+        margin-left: 2rem; }
+        .container-overview .container__text ul li .bold {
+          font-weight: 600; }
 
 .container-background {
   margin-bottom: 4rem; }
@@ -261,10 +277,10 @@ footer {
     .work .container-nav .toggle li {
       padding-left: 5px; }
     .work .container-nav .toggle .ui {
-      color: #9f9f9f;
+      color: #9E9E9E;
       font-size: .8rem; }
     .work .container-nav .toggle .dev {
-      color: #9f9f9f;
+      color: #9E9E9E;
       font-size: .8rem; }
   .work .container {
     position: absolute;
